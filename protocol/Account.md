@@ -4,7 +4,7 @@
 
 ## login
 ### 请求 
-#### POST /accounts/login?filter[include]=user
+#### POST /accounts/login?include=user
 ```json
 {"email": "gbo@example.com", "password": "123456"}
 ```

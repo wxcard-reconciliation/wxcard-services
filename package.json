@@ -1,0 +1,28 @@
+{
+  "name": "wxcard-services",
+  "version": "1.0.0",
+  "description": "wxcard services",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wxcard-reconciliation/wxcard-services.git"
+  },
+  "keywords": [
+    "wxcard",
+    "services"
+  ],
+  "author": "guanbo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wxcard-reconciliation/wxcard-services/issues"
+  },
+  "homepage": "https://github.com/wxcard-reconciliation/wxcard-services",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "request": "^2.58.0",
+    "should": "^7.0.1"
+  }
+}
