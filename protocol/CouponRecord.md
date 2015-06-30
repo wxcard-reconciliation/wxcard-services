@@ -5,12 +5,14 @@
 获取当前用户的核销的历史记录
 
 ### 请求
-#### GET /couponRecords?filter[include]=coupon&filter[include]=wxuser&filter[include]=company
+#### GET /couponRecords?filter[include]=coupon&filter[include]=wxuser&filter[include]=company&filter[where][cancel_code]=110201201245
 #### Querystring
 * `include`
 	* `coupon` 卡卷信息
 	* `wxuser` 消费者微信信息
 	* `company` 加油站信息
+*	`where`
+	*	`cancel_code`	核销码编号，通常从扫描中获得。
 
 ### 返回
 
@@ -53,3 +55,8 @@
   }
 ]
 ```
+
+* `statdate` 有效起始时间。
+* `enddate`	有效截至时间。
+* `least_cost`	有效启用的消费金额，例如满200使用。
+* `company_id`	为空或者与登录用户的companyId一致，通过校验。
